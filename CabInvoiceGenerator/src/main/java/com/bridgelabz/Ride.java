@@ -4,10 +4,12 @@ public class Ride {
 
 	private double distance;
 	private int time;
-
-	public Ride(double distance, int time) {
+	public RideCategories rideCategory;
+	
+	public Ride(RideCategories rideCategory, double distance, int time) {
 		this.distance = distance;
 		this.time = time;
+		this.rideCategory = rideCategory;
 	}
 
 	public double getDistance() {
@@ -24,5 +26,13 @@ public class Ride {
 
 	public void setTime(int time) {
 		this.time = time;
+	}
+
+	public RideCategories getRideCategory() {
+		return rideCategory;
+	}
+
+	public void setRideCategory(RideCategories rideCategory) {
+		this.rideCategory = rideCategory;
 	}
 }
